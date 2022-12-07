@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: photo; }
+.item3 { grid-area: button; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'photo photo photo photo photo photo'
+    'photo photo photo photo photo photo'
+    'photo photo photo photo photo photo'
+    'footer footer footer footer footer footer';
+    gap: 3px;
+
+    padding: 10px;
+} /*correct ^*/
+
+/* .item1 { grid-area: header;}
+.item2 { grid-area: menu;}
+.item3 { grid-area: main;}
+.item4 { grid-area: right;}
+.item5 { grid-area: left;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header menu'
+    'main right menu'
+    'left left left';
+    gap: 10px;
+    padding: 10px;
+} */
+
+
+
+/* .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  } */
+
+  /* div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border: 5px solid black;
+  } */
+  .vert-center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+label {
+    color: #adadad;
+    text-shadow: none;
+}
+
+.formst {
+    height:450px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    width: 400px;
+    background-color: white;
+    border-radius:10px;
+    border:1px solid white;
+    margin: 50px 0px 50px 0px;
+}
+
+body {
+
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px black;
+    text-align:center;
+    background-image: url('backgr.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header {
+    background-color: rgba(182, 208, 226, 0.7);
+    height:100px;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color:white;
+  }
+
+img {
+    /* float:middle; */
+    overflow:hidden;
+    vertical-align: middle;
+
+}
+
+p {
+    border: 2px solid white;
+    padding: 30px;
+
+}
+
+#hd1 {
+
+    height:100px;
+}
+
+.txt_field {
+    position:relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input{
+    width:100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+#reg {
+    width: 100%;
+    height: 50px;
+
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -5px;
+    color: #2691d9;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear:both;
+    display:table;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear:both;
+
+}
+
+.bk {
+    background-color: rgba(182, 208, 226, 0.7);
+}
+
+/* div {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+} */
+
+/* .img2 {
+    float:right;
+} */
+
+.jos {
+    color:white;
+    border: none;
+}
+
+.footer {
+    background-color: rgba(182, 208, 226, 0.7);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px black;
+    text-align: center;
+    color: white;
+
+
+  }
+
+.pagesbutton{
+
+    border-radius:12px;
+    height: 40px;
+    border: 1px white;
+    background-color: rgba(182, 208, 226, 0.7);
+    margin-top: 10px;
+
+    width: 75%;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px black;
+
+
+}
+
+.pagesbutton:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    text-shadow:none;
+}
+
+a:hover, a:active {
+    color: red;
+}
+
+
